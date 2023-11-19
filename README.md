@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Teacher Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This console-based Teacher Management application provides a user-friendly interface with various features to manage teacher records. The application is designed with a focus on efficiency and simplicity.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### 1. Landing/Home Page
 
-### `npm start`
+The landing page offers a user-friendly interface with the following options:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Show all teachers:** View a list of all teachers.
+- **Add a teacher:** Add a new teacher to the records.
+- **Filter teachers based on criteria:** Apply filters to view teachers based on specific criteria.
+- **Search for a teacher:** Search for a teacher by name.
+- **Update a teacher's record:** Modify the information of an existing teacher.
+- **Delete a teacher:** Remove a teacher from the records.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Teacher's Record
 
-### `npm test`
+Each teacher's record includes the following information:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Full Name:** The full name of the teacher.
+- **Age:** The age of the teacher.
+- **Date of Birth:** The date of birth of the teacher.
+- **Number of Classes:** The number of classes the teacher teaches.
 
-### `npm run build`
+### 3. Filter Teachers by Criteria
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+An option-based page is implemented to filter teachers based on specific criteria:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Filter by Age:** Choose an age range to view teachers within that range.
+- **Filter by the number of classes:** Specify a range of classes to filter teachers accordingly.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 4. Calculate Average Number of Classes
 
-### `npm run eject`
+The application calculates and display the average number of classes taken by teachers.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## File-Based System
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The application utilizes a file-based system to store teacher records. Each teacher's information is stored in a structured format within files, providing easy access and management of data.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To use the Teacher Management application:
 
-## Learn More
+1. Clone the repository: `git clone https://github.com/akshith-07/teacher_management-fontend.git`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory: `cd teacher-management-application`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Run the application: `npm start`
 
-### Code Splitting
+Follow the on-screen prompts to interact with the application and perform various operations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contributing
 
-### Analyzing the Bundle Size
+Contributions to this project are welcome! If you wish to contribute, please follow the standard contribution process:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch for your feature: `git checkout -b feature-name`.
+3. Commit your changes: `git commit -m 'Add some feature'`.
+4. Push to the branch: `git push origin feature-name`.
+5. Open a pull request.
