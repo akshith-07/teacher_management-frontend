@@ -42,9 +42,12 @@ const EditTeacherComponent = () => {
 
   const validateTeacher = () => {
     axios
-      .post("http://localhost:3500/api/v1/teachers/validate", {
-        fullName: teacherInfo.fullName,
-      })
+      .post(
+        "https://teacher-management-backend-omega.vercel.app/api/v1/teachers/validate",
+        {
+          fullName: teacherInfo.fullName,
+        }
+      )
       .then((response) => {
         if (response.data) {
           setTeacherInfo(response.data);
@@ -65,7 +68,10 @@ const EditTeacherComponent = () => {
     event.preventDefault();
 
     axios
-      .patch("http://localhost:3500/api/v1/teachers", teacherInfo)
+      .patch(
+        "https://teacher-management-backend-omega.vercel.app/api/v1/teachers",
+        teacherInfo
+      )
       .then((response) => {
         if (response.data.acknowledged === true) {
           alert(`${teacherInfo.fullName} is updated successfully`);

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./DeleteTeacherComponent.css"; 
+import "./DeleteTeacherComponent.css";
 import axios from "axios";
 
 export const formatDateString = (dateString) => {
@@ -51,9 +51,12 @@ const DeleteTeacherComponent = () => {
 
   const fullNameValidator = () => {
     axios
-      .post("http://localhost:3500/api/v1/teachers/validate", {
-        fullName: teacherInfo.fullName,
-      })
+      .post(
+        "https://teacher-management-backend-omega.vercel.app/api/v1/teachers/validate",
+        {
+          fullName: teacherInfo.fullName,
+        }
+      )
       .then((response) => {
         setTeacherInfo({
           fullName: response.data.fullName,
@@ -75,7 +78,10 @@ const DeleteTeacherComponent = () => {
     event.preventDefault();
 
     axios
-      .delete("http://localhost:3500/api/v1/teachers", { data: teacherInfo })
+      .delete(
+        "https://teacher-management-backend-omega.vercel.app/api/v1/teachers",
+        { data: teacherInfo }
+      )
       .then((response) => {
         if (response.data.acknowledged === true) {
           alert(`${teacherInfo.fullName} is deleted successfully`);
@@ -109,7 +115,11 @@ const DeleteTeacherComponent = () => {
       </div>
 
       <div>
-        <button className="secondbutton" type="button" onClick={fullNameValidator}>
+        <button
+          className="secondbutton"
+          type="button"
+          onClick={fullNameValidator}
+        >
           Check
         </button>
       </div>
@@ -147,7 +157,7 @@ const DeleteTeacherComponent = () => {
         />
       </div>
 
-      <div >
+      <div>
         <button type="submit">Delete</button>
       </div>
     </form>

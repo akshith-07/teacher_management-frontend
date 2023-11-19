@@ -42,7 +42,10 @@ const AddNewTeacherComponent = () => {
     event.preventDefault();
 
     axios
-      .post(`http://localhost:3500/api/v1/teachers/`, teacherInfo)
+      .post(
+        `https://teacher-management-backend-omega.vercel.app/api/v1/teachers/`,
+        teacherInfo
+      )
       .then((response) => {
         console.log(response);
         alert(`${response.data.fullName} is added successfully.`);

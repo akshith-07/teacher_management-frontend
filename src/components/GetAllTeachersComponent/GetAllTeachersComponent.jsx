@@ -16,7 +16,9 @@ const GetAllTeachersComponent = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3500/api/v1/teachers`)
+      .get(
+        `https://teacher-management-backend-omega.vercel.app/api/v1/teachers`
+      )
       .then((response) => {
         setTeachers(response.data);
         calculateAverage(response.data);
@@ -37,12 +39,10 @@ const GetAllTeachersComponent = () => {
   const applyFilters = () => {
     let filteredTeachers = teachers;
 
-    // Apply search filter
     filteredTeachers = filteredTeachers.filter((teacher) =>
       teacher.fullName.toLowerCase().includes(search.toLowerCase())
     );
 
-    // Apply age range filter
     if (ageFilter) {
       const [minAge, maxAge] = ageFilter.split("-");
       if (minAge === "60") {
@@ -58,7 +58,6 @@ const GetAllTeachersComponent = () => {
       }
     }
 
-    // Apply classes range filter
     if (classesFilter) {
       const [minClasses, maxClasses] = classesFilter.split("-");
       if (minClasses === "20") {
