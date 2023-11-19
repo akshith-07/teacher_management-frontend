@@ -45,9 +45,11 @@ To use the Teacher Management application:
 
 1. Clone the repository: `git clone https://github.com/akshith-07/teacher_management-fontend.git`
 
-2. Navigate to the project directory: `cd teacher-management-application`
+2. Navigate to the project directory: `cd teacher-management-frontend`
 
-3. Run the application: `npm start`
+3. Install dependencies: `npm install`
+
+4. Run the application: `npm start`
 
 Follow the on-screen prompts to interact with the application and perform various operations.
 
