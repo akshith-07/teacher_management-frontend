@@ -39,7 +39,6 @@
 .form-container button[type="submit"] {
   width: 100%;
   height: 40px;
-  /* padding: 12px; */
   background-color: #4caf50;
   color: white;
   border: none;
@@ -51,7 +50,6 @@
 .secondbutton {
   width: 40%;
   height: 40px;
-  /* padding: 12px; */
   background-color: #ccae19;
   color: white;
   border: none;

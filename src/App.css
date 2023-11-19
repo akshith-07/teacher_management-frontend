@@ -21,7 +21,6 @@
 
 .header {
   color: aqua;
-  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
 }
 
 .nav-menu a:hover {
@@ -29,14 +28,13 @@
   color: #000;
 }
 
-/* Works for Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-/* Works for Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+  
 }

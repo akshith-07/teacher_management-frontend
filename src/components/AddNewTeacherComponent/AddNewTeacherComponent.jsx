@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./AddNewTeacherComponent.css"; // You can create this CSS file for styling
+import "./AddNewTeacherComponent.css";
 import axios from "axios";
 
 const AddNewTeacherComponent = () => {
@@ -106,7 +106,7 @@ const AddNewTeacherComponent = () => {
           required
         />
       </div>
-      
+
       <button type="submit">Add</button>
     </form>
   );

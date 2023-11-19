@@ -7,7 +7,6 @@ import DeleteTeacherComponent from "./components/DeleteTeacherComponent/DeleteTe
 
 function App() {
   return (
-    
     <Router>
       <div className="container">
         <h1 className="header">TEACHER MANAGEMENT APPLICATION</h1>

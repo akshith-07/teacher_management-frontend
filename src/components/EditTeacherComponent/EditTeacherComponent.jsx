@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-// import "./EditTeacherComponent.css";
-import "../DeleteTeacherComponent/DeleteTeacherComponent.css";
-// You can create this CSS file for styling
+import "./EditTeacherComponent.css";
+
 import axios from "axios";
 import { formatDateString } from "../DeleteTeacherComponent/DeleteTeacherComponent";
 
@@ -48,7 +47,6 @@ const EditTeacherComponent = () => {
       })
       .then((response) => {
         if (response.data) {
-          // Teacher exists, populate form with existing details
           setTeacherInfo(response.data);
         } else {
           alert(`No teacher found with the name ${teacherInfo.fullName}`);
@@ -87,7 +85,7 @@ const EditTeacherComponent = () => {
 
   return (
     <form className="form-container" onSubmit={formSubmitHandler}>
-      <h2>Updating teachers</h2>
+      <h2>Update Teacher Details</h2>
 
       <div className="form-group">
         <label>Full Name</label>

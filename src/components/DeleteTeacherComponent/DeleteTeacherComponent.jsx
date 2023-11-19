@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./DeleteTeacherComponent.css"; // You can create this CSS file for styling
+import "./DeleteTeacherComponent.css"; 
 import axios from "axios";
 
 export const formatDateString = (dateString) => {
@@ -95,7 +95,7 @@ const DeleteTeacherComponent = () => {
 
   return (
     <form className="form-container" onSubmit={formSubmitHandler}>
-      <h2>Deleting teachers</h2>
+      <h2>Delete teacher</h2>
 
       <div className="form-group">
         <label>Full Name</label>
